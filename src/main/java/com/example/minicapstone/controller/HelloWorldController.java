@@ -18,8 +18,8 @@ public class HelloWorldController {
         return "Hello ".concat(helloWorldRequest.getFirstName()).concat(" ".concat(helloWorldRequest.getLastName()));
 
     }
-    @PutMapping("/add/{newTask}")
-    public String updateHelloWorld(@PathVariable @NonNull String newTask) {
-        return "Hello ".concat(newTask);
+    @PutMapping("/custom/{firstName}/{lastName}")
+    public String getHelloName(@PathVariable String firstName, @PathVariable String lastName) {
+        return "Hello ".concat(firstName).concat(" ".concat(lastName));
     }
 }
