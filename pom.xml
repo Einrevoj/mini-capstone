@@ -15,9 +15,9 @@
     <description>mini-capstone</description>
     <properties>
 <!--        <java.version>19</java.version>-->
-        <psql.url>jdbc:postgresql://database-1.c1p52qjgvteo.us-east-1.rds.amazonaws.com:5432/postgres</psql.url>
+        <psql.url>jdbc:postgresql://localhost:5432/postgres</psql.url>
         <psql.user>postgres</psql.user>
-        <psql.password>cano1234</psql.password>
+        <psql.password>myfirstproject</psql.password>
     </properties>
     <dependencies>
         <dependency>
@@ -60,6 +60,11 @@
                     <artifactId>tomcat-jdbc</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>3.0.0</version>
         </dependency>
     </dependencies>
 
